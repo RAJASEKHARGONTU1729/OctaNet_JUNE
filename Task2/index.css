@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Lilita+One&family=Permanent+Marker&display=swap');
+* {
+    margin:0;
+    padding:0;
+  }
+ .title{
+    font-family: "Lilita One", sans-serif;
+    font-size: 40px;
+ }
+ .container{
+    width:35%;
+    margin:3% auto;
+    display:flex;
+    flex-direction: column;
+    border:2px solid gray;
+    border-radius: 10px;
+    padding:40px;
+    align-items: center;
+    background-color: #fff1cd75;
+ }
+ .tasks{
+    width:100%;
+    margin-top: 15px;
+    height:fit-content;
+ }
+ .items{
+    width:100%;
+    font-family: "LXGW WenKai TC", cursive;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+ }
+ .item{
+    height:fit-content;
+    border:1px solid black;
+    margin:3px 0;
+    padding:10px; 
+    border-radius:18px; 
+ }
+ 
+ .incomplete{
+    background-color: #00ffff21;
+ }
+ img{
+   vertical-align: middle;
+   cursor:pointer;
+ }
+ #delete{
+   float:right;
+ }
+ #ind{
+   float:left;
+   margin-right: 10px;
+ }
+ .completed{
+    background-color: #bafa9cba;
+    text-decoration: line-through;
+ }
+ svg{
+    fill: black;
+    vertical-align: bottom;
+    cursor:pointer;
+ }
+ .addnote{
+   margin:20px 0px 0 0;
+ }
+ .addnote input{
+   width:270px;
+   height:30px;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding:5px;
+   font-family:monospace ;
+   font-size:larger;
+ }
+ li{
+   transition-property: all;
+   transition-duration: 0.1s;
+   transition-timing-function: ease-in-out;
+ }
+ li:hover{
+   transform:scale(1.02,1.1);
+ }
+ #completed{
+   margin-top: 30px;
+ }
+#clear{
+  text-decoration: underline;
+  cursor:pointer;
+}
+#clear:hover{
+  color:brown;
+}
+#alert{
+  color:rgb(18, 4, 4);
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  height:30px;
+  text-align: center;
+  margin-top: 40px;
+}
